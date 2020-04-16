@@ -161,10 +161,10 @@ class CrashReporter {
     }
 
     /**
-     * @param \Throwable $e
+     * @param $e
      * @return array|null
      */
-    private function buildParamsFromException(\Throwable $e) {
+    private function buildParamsFromException($e) {
         if (!($e instanceof Exception || $e instanceof \ErrorException)) {
             return NULL;
         }
